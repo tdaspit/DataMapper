@@ -1,12 +1,13 @@
+// Tyler Daspit
+
+// new version
+
 //package csvReader;
 
 //import csvReader.studentFileMapper;
 
 public class studentFileMapper {
-
-	
-	// constructor
-	public studentFileMapper() {
+	//init var
 	String first = "";
 	String last = "";
 	int wNum;
@@ -14,28 +15,37 @@ public class studentFileMapper {
 	double gpa;
 
 	boolean isPrime;
+	
+	// constructor
+	public studentFileMapper(String first, String last, int wNum, String major, double gpa, boolean isPrime) {
+		this.first = first;
+		this.last = last;
+		this.wNum = wNum;
+		this.major = major;
+		this.gpa = gpa;
+
+		this.isPrime = isPrime;
 	}
 	
 	// get
-	public String getFirst() {String first;
-	return first;}
+	public String getFirst() {String first; return first;}
 	public String getLast() {return last;}
-	
 	public int getWnum() {return wNum;}
-	
 	public String getMajor() {return major;}
 	public double getGpa() {return gpa;}
+	
 	public boolean getisPrime() {return isPrime;}
 	
 	
 	//set
-	class set implements studentFileMapper() {
-	public void setFirst(String newFirst) {this.first = newFirst;}
-	public void setLast(String newLast) {this.last = newLast;}
-	public void setWnum(String newWNum) {this.wNum = newWNum;}
-	public void setMajor(String newMajor) {this.major = newMajor;}
-	public void setGpa(double newGpa) {this.Gpa= newGpa;}
-	public void setIsPrime(double newIsPrime) {this.isPrime= newIsPrime;}
+//	class set implements studentFileMapper() {
+	public void setFirst(String first) {this.first = first;}
+	public void setLast(String last) {this.last = last;}
+	public void setWnum(String wNum) {this.wNum = wNum;}
+	public void setMajor(String major) {this.major = major;}
+	public void setGpa(double gpa) {this.gpa= gpa;}
+	
+	public void setIsPrime(boolean newIsPrime) {this.isPrime= newIsPrime;}
 	
 	/*
 	Student student = new Student(guid);
@@ -44,7 +54,7 @@ public class studentFileMapper {
 	student.setGrade(grade);
 	student.setStudentId(studentID);
 	*/
-	}
+//	}
 	
 	// w# isPrime
 	public static boolean isPrime(int wNum) {
