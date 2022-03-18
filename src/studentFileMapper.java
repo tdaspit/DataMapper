@@ -27,34 +27,25 @@ public class studentFileMapper {
 		this.isPrime = isPrime;
 	}
 	
-	// get
+	// get and set
 	public String getFirst() {String first; return first;}
-	public String getLast() {return last;}
-	public int getWnum() {return wNum;}
-	public String getMajor() {return major;}
-	public double getGpa() {return gpa;}
-	
-	public boolean getisPrime() {return isPrime;}
-	
-	
-	//set
-//	class set implements studentFileMapper() {
 	public void setFirst(String first) {this.first = first;}
+	
+	public String getLast() {return last;}
 	public void setLast(String last) {this.last = last;}
+	
+	public int getWnum() {return wNum;}
 	public void setWnum(String wNum) {this.wNum = wNum;}
+	
+	public String getMajor() {return major;}
 	public void setMajor(String major) {this.major = major;}
+	
+	public double getGpa() {return gpa;}
 	public void setGpa(double gpa) {this.gpa= gpa;}
 	
+	public boolean getisPrime() {return isPrime;}
 	public void setIsPrime(boolean newIsPrime) {this.isPrime= newIsPrime;}
 	
-	/*
-	Student student = new Student(guid);
-	
-	student.setName(name);
-	student.setGrade(grade);
-	student.setStudentId(studentID);
-	*/
-//	}
 	
 	// w# isPrime
 	public static boolean isPrime(int wNum) {
