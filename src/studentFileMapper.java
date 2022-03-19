@@ -46,6 +46,11 @@ public class studentFileMapper {
 	public boolean getisPrime() {return isPrime;}
 	public void setIsPrime(boolean newIsPrime) {this.isPrime= newIsPrime;}
 	
+	// create student object
+	// student object needs to find and update record
+
+	
+	
 	
 	// w# isPrime
 	public static boolean isPrime(int wNum) {
