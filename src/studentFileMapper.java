@@ -28,14 +28,14 @@ public class studentFileMapper {
 	}
 	
 	// get and set
-	public String getFirst() {String first; return first;}
+	public String getFirst() {String first = null; return first;}
 	public void setFirst(String first) {this.first = first;}
 	
 	public String getLast() {return last;}
 	public void setLast(String last) {this.last = last;}
 	
 	public int getWnum() {return wNum;}
-	public void setWnum(String wNum) {this.wNum = wNum;}
+	public void setWnum(int wNum) {this.wNum = wNum;}
 	
 	public String getMajor() {return major;}
 	public void setMajor(String major) {this.major = major;}
